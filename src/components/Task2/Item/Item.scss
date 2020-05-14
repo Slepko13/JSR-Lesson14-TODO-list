@@ -1,0 +1,65 @@
+.Item {
+    color: #111111;
+    background-color: #ffffff;
+    padding: 5px;
+    overflow: hidden;
+    border-top: 1px solid #e3e3e3;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    .messageDone {
+        text-decoration: line-through;
+        opacity: 0.2;
+        font-weight: normal;
+        font-size: 25px;
+    }
+    .message {
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .status {
+        display: flex;
+        text-align: center;
+
+        .done {
+            background-color: #54b25d;
+            color: #ffffff;
+            width: 40px;
+            margin-right: 4px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .isDone {
+            color: black;
+        }
+
+        .delete {
+            background-color: #dd4846;
+            color: #ffffff;
+            width: 40px;
+
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .correction {
+        width: 100%;
+        height: 100%;
+        .correctionInput {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            color: blue;
+            font-size: 25px;
+        }
+    }
+}
