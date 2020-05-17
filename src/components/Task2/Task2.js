@@ -3,16 +3,17 @@ import './Task2.scss';
 import Item from './Item/Item';
 
 
+
 class Task2 extends Component {
     constructor(props) {
         super(props);
         this.state = {
             message: '',
             correction: '',
-            list: [
-
-
-            ]
+            title: '',
+            isDone: false,
+            inCorrection: false,
+            list: []
         }
         this.handleChange = this.handleChange.bind(this);
         this.addListItem = this.addListItem.bind(this);
@@ -111,6 +112,7 @@ class Task2 extends Component {
             <div className="Task2">
                 Double click to change item. Blur/enter to save.
                 <div className="list">
+
                     {list.length > 0 ? list.map((item, index) =>
                         <Item
                             key={index}
@@ -127,6 +129,7 @@ class Task2 extends Component {
 
 
                         />) : null}
+
                 </div>
 
                 <div className="wrap">Task
@@ -141,7 +144,7 @@ class Task2 extends Component {
                 </div>
 
 
-            </div>
+            </div >
         );
     }
 }
